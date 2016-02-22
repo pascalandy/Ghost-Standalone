@@ -24,7 +24,7 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/path_to_your_DB.db')
+                filename: path.join(__dirname, '/content/data/dev-DB.db')
             },
             debug: false
         },
@@ -57,7 +57,7 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/path_to_your_DB.db')
+                filename: path.join(__dirname, '/content/data/prod-DB.db')
             },
             debug: false
         },
@@ -79,7 +79,7 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-test.db')
+                filename: path.join(__dirname, '/content/data/test-DB.db')
             }
         },
         server: {
@@ -96,7 +96,7 @@ config = {
         database: {
             client: 'sqlite3',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost-travis.db')
+                filename: path.join(__dirname, '/content/data/travis-DB.db')
             }
         },
         server: {

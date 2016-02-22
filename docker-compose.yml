@@ -5,9 +5,10 @@ blog:
     NODE_ENV: "production"
     PUBLIC_URL: "https://192.168.99.100"
   volumes:
-    - /host_directory/data:/app/content/data
-    - /host_directory/images:/app/content/images
-    - /host_directory/themes:/app/content/themes
+    - /content/data:/app/content/data
+    - /content/images:/app/content/images
+    - /content/themes:/app/content/themes
+    - /content/apps:/app/content/apps
   ports:
     - "80:2368"
   restart: always
