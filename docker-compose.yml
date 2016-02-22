@@ -1,9 +1,9 @@
 blog:
   build: ghost/
   environment:
-    VIRTUAL_HOST: "domainname.com"
+    VIRTUAL_HOST: "192.168.99.100"
     NODE_ENV: "production"
-    PUBLIC_URL: "https://www.domain.com"
+    PUBLIC_URL: "https://192.168.99.100"
   volumes:
     - /host_directory/data:/app/content/data
     - /host_directory/images:/app/content/images
@@ -11,4 +11,3 @@ blog:
   ports:
     - "80:2368"
   restart: always
-   
