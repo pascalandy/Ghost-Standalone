@@ -17,6 +17,6 @@ ADD config.js /app/
 WORKDIR /app
 EXPOSE 2368
 
-ENV GHOST_URL https://www.yourdomain.com
+ENV GHOST_URL https://192.168.99.100
 VOLUME ["/app/content/data"]
 CMD ["node", "index.js"]
