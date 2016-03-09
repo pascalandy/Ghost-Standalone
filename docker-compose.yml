@@ -1,14 +1,14 @@
 blog:
   build: ghost/
   environment:
-    VIRTUAL_HOST: "192.168.99.100"
+    VIRTUAL_HOST: "dockercluster.tk"
     NODE_ENV: "production"
-    PUBLIC_URL: "https://192.168.99.100"
+    PUBLIC_URL: "http://dockercluster.tk"
   volumes:
     - /content/data:/app/content/data
     - /content/images:/app/content/images
     - /content/themes:/app/content/themes
     - /content/apps:/app/content/apps
   ports:
-    - "80:2368"
+    - "3003:3003"
   restart: always

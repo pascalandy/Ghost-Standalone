@@ -15,8 +15,8 @@ RUN mkdir -p /app && \
 ADD config.js /app/
 
 WORKDIR /app
-EXPOSE 2368
+EXPOSE 3003
 
-ENV GHOST_URL https://192.168.99.100
+ENV GHOST_URL http://dockercluster.tk
 VOLUME ["/app/content/data"]
 CMD ["node", "index.js"]
